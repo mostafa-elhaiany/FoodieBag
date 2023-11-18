@@ -5,6 +5,11 @@ api_key = "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"
 
 
 def get_recipe(base64_image, exclude_list=[], include_list=[]):
+  '''
+  :param exclude_list: ingredients that should be excluded from the recipe
+  :param include_list: additional ingredients to add
+  :return: recipe, ingredients, keywords
+  '''
 
   headers = {
     "Content-Type": "application/json",
