@@ -19,6 +19,8 @@
 		4202E6ED2B0945B4002F1085 /* FoodPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6EC2B0945B4002F1085 /* FoodPreferences.swift */; };
 		4202E6EF2B094796002F1085 /* Allergens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6EE2B094796002F1085 /* Allergens.swift */; };
 		4202E6F72B0951DD002F1085 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6F62B0951DC002F1085 /* LoginView.swift */; };
+		4202E6F92B0961F9002F1085 /* loginLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 4202E6F82B0961F9002F1085 /* loginLottie.json */; };
+		4202E6FB2B0962E1002F1085 /* AllergiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6FA2B0962E1002F1085 /* AllergiesView.swift */; };
 		420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */; };
 		420843372B08C0150011F58A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843362B08C0150011F58A /* MainView.swift */; };
 		420843392B08C0160011F58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420843382B08C0160011F58A /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		4202E6F32B094D9B002F1085 /* video2.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.MP4; path = ../../../../../../../Downloads/video2.MP4; sourceTree = "<group>"; };
 		4202E6F42B094D9B002F1085 /* video1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.MP4; path = ../../../../../../../Downloads/video1.MP4; sourceTree = "<group>"; };
 		4202E6F62B0951DC002F1085 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4202E6F82B0961F9002F1085 /* loginLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loginLottie.json; sourceTree = "<group>"; };
+		4202E6FA2B0962E1002F1085 /* AllergiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesView.swift; sourceTree = "<group>"; };
 		420843312B08C0150011F58A /* FoodieBagFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieBagFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendApp.swift; sourceTree = "<group>"; };
 		420843362B08C0150011F58A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			children = (
 				4202E6E02B0930B6002F1085 /* ProfileView.swift */,
 				4202E6EC2B0945B4002F1085 /* FoodPreferences.swift */,
+				4202E6FA2B0962E1002F1085 /* AllergiesView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		4202E6E92B093D7F002F1085 /* lotties */ = {
 			isa = PBXGroup;
 			children = (
+				4202E6F82B0961F9002F1085 /* loginLottie.json */,
 			);
 			path = lotties;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4208433C2B08C0160011F58A /* Preview Assets.xcassets in Resources */,
+				4202E6F92B0961F9002F1085 /* loginLottie.json in Resources */,
 				420843392B08C0160011F58A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4202E6FB2B0962E1002F1085 /* AllergiesView.swift in Sources */,
 				420843372B08C0150011F58A /* MainView.swift in Sources */,
 				4202E6E12B0930B6002F1085 /* ProfileView.swift in Sources */,
 				4202E6DC2B09151F002F1085 /* ContentView.swift in Sources */,

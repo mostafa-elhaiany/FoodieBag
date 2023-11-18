@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct FoodItem {
+struct FoodItem: Identifiable, Hashable {
+    var id = UUID().uuidString
     var emoji: String
     var text: String
+    var size: CGFloat = 0
+
 }
 
 
@@ -246,3 +249,17 @@ func removeDuplicates(from array: [FoodItem]) -> [FoodItem] {
 
 
 let uniqueFoodItems = removeDuplicates(from: foodItems)
+
+
+extension UIScreen{
+    static let screenWidth = UIScreen.main.bounds.width
+}
+
+extension String{
+    func getSize() -> CGFloat{
+        let font = UIFont.systemFont(ofSize: 16)
+        let attributes = [NSAttributedString.Key.font: font]
+        let size = (self as NSString).size(withAttributes: attributes)
+        return size.width
+    }
+}
