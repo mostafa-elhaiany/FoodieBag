@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */; };
-		420843372B08C0150011F58A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843362B08C0150011F58A /* ContentView.swift */; };
+		420843372B08C0150011F58A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843362B08C0150011F58A /* MainView.swift */; };
 		420843392B08C0160011F58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420843382B08C0160011F58A /* Assets.xcassets */; };
 		4208433C2B08C0160011F58A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4208433B2B08C0160011F58A /* Preview Assets.xcassets */; };
 		420843462B08C0160011F58A /* FoodieBagFrontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843452B08C0160011F58A /* FoodieBagFrontendTests.swift */; };
 		420843502B08C0160011F58A /* FoodieBagFrontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208434F2B08C0160011F58A /* FoodieBagFrontendUITests.swift */; };
 		420843522B08C0160011F58A /* FoodieBagFrontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843512B08C0160011F58A /* FoodieBagFrontendUITestsLaunchTests.swift */; };
+		420843622B08C1350011F58A /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843612B08C1350011F58A /* VideosView.swift */; };
+		420843642B08C13C0011F58A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843632B08C13C0011F58A /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		420843312B08C0150011F58A /* FoodieBagFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieBagFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendApp.swift; sourceTree = "<group>"; };
-		420843362B08C0150011F58A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		420843362B08C0150011F58A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		420843382B08C0160011F58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4208433B2B08C0160011F58A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		420843412B08C0160011F58A /* FoodieBagFrontendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieBagFrontendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		4208434B2B08C0160011F58A /* FoodieBagFrontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodieBagFrontendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4208434F2B08C0160011F58A /* FoodieBagFrontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendUITests.swift; sourceTree = "<group>"; };
 		420843512B08C0160011F58A /* FoodieBagFrontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		420843612B08C1350011F58A /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
+		420843632B08C13C0011F58A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,7 @@
 				4208435F2B08C04B0011F58A /* model */,
 				4208435E2B08C0470011F58A /* view */,
 				420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */,
-				420843362B08C0150011F58A /* ContentView.swift */,
+				420843362B08C0150011F58A /* MainView.swift */,
 				420843382B08C0160011F58A /* Assets.xcassets */,
 				4208433A2B08C0160011F58A /* Preview Content */,
 			);
@@ -133,6 +137,8 @@
 		4208435E2B08C0470011F58A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				420843612B08C1350011F58A /* VideosView.swift */,
+				420843632B08C13C0011F58A /* ProfileView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420843372B08C0150011F58A /* ContentView.swift in Sources */,
+				420843642B08C13C0011F58A /* ProfileView.swift in Sources */,
+				420843372B08C0150011F58A /* MainView.swift in Sources */,
 				420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */,
+				420843622B08C1350011F58A /* VideosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
