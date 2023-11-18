@@ -1,0 +1,21 @@
+Chinese Egg Rolls: Skins
+
+{
+  "ingredients": [
+    "flour",
+    "salt",
+    "eggs",
+    "water",
+    "filling of your choice",
+    "oil (for frying)"
+  ],
+  "instructions": [
+    "Sift the flour and salt together, and place in the bowl of the mixing machine.",
+    "Add the eggs and water. Using the paddle, mix at slow speed until the dough is firm and smooth.",
+    "Turn out the dough onto a floured board and let it rest for 10 minutes, keeping it covered with a damp cloth.",
+    "Using a rolling pin, roll out the dough to a thickness of approximately 1/8 inch.",
+    "Cut the rolled-out dough into 6-inch squares.",
+    "Place 1 to 1 1/2 oz of filling on each 6-inch square of dough.",
+    "Fold in the two sides so the filling cannot flow out, then roll the filled dough tightly.",
+    "Dampen the end with water to secure.",
+    "Fry the rolls in deep fat at 350F-180C until golden brown; drain."

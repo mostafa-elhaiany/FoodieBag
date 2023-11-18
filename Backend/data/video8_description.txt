@@ -1,0 +1,27 @@
+Walnut and Chocolate Cookies
+
+{
+  "ingredients": [
+    "flour",
+    "powdered sugar",
+    "cinnamon",
+    "butter",
+    "ground walnuts",
+    "lemon peel",
+    "egg yolk",
+    "chocolate",
+    "shortening"
+  ],
+  "instructions": [
+    "Preheat oven to 325 F (165 C).",
+    "Sift flour, powdered sugar, and cinnamon together into a bowl.",
+    "Cut in butter until the mixture resembles coarse meal.",
+    "Stir in ground walnuts, lemon peel, and egg yolk.",
+    "Turn the mixture onto a floured board and knead until smooth.",
+    "Roll out on a floured board to 1/8-inch thickness and cut into 2-inch rounds.",
+    "Place on a greased cookie sheet and bake for 10 to 15 minutes, or until lightly browned.",
+    "Cool on a wire rack.",
+    "Icing: In a double boiler, very slowly melt chocolate and shortening over warm water.",
+    "Dip half of each cookie into the melted chocolate mixture.",
+    "Refrigerate on wax paper until the chocolate is set.",
+    "Makes about 40 cookies."

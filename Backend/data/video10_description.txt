@@ -1,0 +1,17 @@
+Chinese Barbecue Sauce - Char Sui
+{
+  "ingredients": [
+    "1/2 cup Sherry",
+    "4 Cloves garlic",
+    "6 tablespoons Soy sauce",
+    "2 teaspoons Plum sauce",
+    "2 tablespoons Black bean paste",
+    "6 tablespoons Hoisin sauce",
+    "2 teaspoons Salt",
+    "1 1/2 teaspoons Chinese 5-spice",
+    "1/2 cup Sugar"
+  ],
+  "servings": "13 Servings",
+  "instructions": [
+    "Mix together well.",
+    "Heat in a double boiler - add cornstarch for thickening."
