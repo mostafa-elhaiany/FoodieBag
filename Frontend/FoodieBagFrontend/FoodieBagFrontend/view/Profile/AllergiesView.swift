@@ -6,20 +6,17 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct AllergiesView: View {
-    @State private var searchText = ""
-    @State private var selectedItems: [FoodItem] = []
-    var filteredItems: [FoodItem] {
-        if searchText.isEmpty {
-            return foodItems
-        } else {
-            return foodItems.filter { $0.text.lowercased().contains(searchText.lowercased()) }
-        }
-    }
+    @State var player = AVPlayer(url: Bundle.main.url(forResource: "video2",
+                                                      withExtension: "mp4")!)
+    @State var isPlaying: Bool = false
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VideoPlayer(player: player)
+            .frame(width: 320, height: 180, alignment: .center)
+
     }
 }
 
