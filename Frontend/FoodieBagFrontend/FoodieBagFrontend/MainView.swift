@@ -14,6 +14,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Videos", systemImage: "house")
                 }
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "person")
+                }
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")

@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "animatedtabbar",
+      "identity" : "lottie-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/exyte/AnimatedTabBar",
+      "location" : "https://github.com/airbnb/lottie-ios",
       "state" : {
-        "revision" : "1eef24600ecb6882ff81445dbf1b02537e74c4b3",
-        "version" : "0.1.1"
+        "revision" : "45517c3cfec9469bbdd4f86e32393c28ae9df0bc",
+        "version" : "4.3.3"
       }
     }
   ],

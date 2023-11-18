@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4202E6D52B090784002F1085 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6D42B090784002F1085 /* HomeView.swift */; };
+		4202E6D82B091247002F1085 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6D72B091247002F1085 /* Recipe.swift */; };
+		4202E6DA2B091498002F1085 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6D92B091498002F1085 /* RecipeView.swift */; };
+		4202E6DC2B09151F002F1085 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6DB2B09151F002F1085 /* ContentView.swift */; };
+		4202E6DE2B091538002F1085 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6DD2B091538002F1085 /* BlurView.swift */; };
+		4202E6E12B0930B6002F1085 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6E02B0930B6002F1085 /* ProfileView.swift */; };
+		4202E6E32B093B9F002F1085 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6E22B093B9F002F1085 /* LottieView.swift */; };
+		4202E6E62B093CAB002F1085 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4202E6E52B093CAB002F1085 /* Lottie */; };
+		4202E6E82B093CC0002F1085 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6E72B093CC0002F1085 /* Preferences.swift */; };
+		4202E6ED2B0945B4002F1085 /* FoodPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6EC2B0945B4002F1085 /* FoodPreferences.swift */; };
+		4202E6EF2B094796002F1085 /* Allergens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E6EE2B094796002F1085 /* Allergens.swift */; };
 		420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */; };
 		420843372B08C0150011F58A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843362B08C0150011F58A /* MainView.swift */; };
 		420843392B08C0160011F58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420843382B08C0160011F58A /* Assets.xcassets */; };
@@ -15,7 +26,6 @@
 		420843502B08C0160011F58A /* FoodieBagFrontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208434F2B08C0160011F58A /* FoodieBagFrontendUITests.swift */; };
 		420843522B08C0160011F58A /* FoodieBagFrontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843512B08C0160011F58A /* FoodieBagFrontendUITestsLaunchTests.swift */; };
 		420843622B08C1350011F58A /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843612B08C1350011F58A /* VideosView.swift */; };
-		420843642B08C13C0011F58A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843632B08C13C0011F58A /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4202E6D42B090784002F1085 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4202E6D72B091247002F1085 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = FoodieBagFrontend/view/Recipe.swift; sourceTree = SOURCE_ROOT; };
+		4202E6D92B091498002F1085 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		4202E6DB2B09151F002F1085 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4202E6DD2B091538002F1085 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		4202E6E02B0930B6002F1085 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4202E6E22B093B9F002F1085 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		4202E6E72B093CC0002F1085 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		4202E6EC2B0945B4002F1085 /* FoodPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPreferences.swift; sourceTree = "<group>"; };
+		4202E6EE2B094796002F1085 /* Allergens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergens.swift; sourceTree = "<group>"; };
+		4202E6F12B094D9B002F1085 /* video3.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video3.MP4; path = ../../../../../../../Downloads/video3.MP4; sourceTree = "<group>"; };
+		4202E6F22B094D9B002F1085 /* video4.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video4.MP4; path = ../../../../../../../Downloads/video4.MP4; sourceTree = "<group>"; };
+		4202E6F32B094D9B002F1085 /* video2.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.MP4; path = ../../../../../../../Downloads/video2.MP4; sourceTree = "<group>"; };
+		4202E6F42B094D9B002F1085 /* video1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.MP4; path = ../../../../../../../Downloads/video1.MP4; sourceTree = "<group>"; };
 		420843312B08C0150011F58A /* FoodieBagFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieBagFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendApp.swift; sourceTree = "<group>"; };
 		420843362B08C0150011F58A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -47,7 +71,6 @@
 		4208434F2B08C0160011F58A /* FoodieBagFrontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendUITests.swift; sourceTree = "<group>"; };
 		420843512B08C0160011F58A /* FoodieBagFrontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		420843612B08C1350011F58A /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
-		420843632B08C13C0011F58A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4202E6E62B093CAB002F1085 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +99,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4202E6D62B0907FE002F1085 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4202E6D42B090784002F1085 /* HomeView.swift */,
+				4202E6D92B091498002F1085 /* RecipeView.swift */,
+				4202E6DB2B09151F002F1085 /* ContentView.swift */,
+				4202E6DD2B091538002F1085 /* BlurView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		4202E6DF2B0930AD002F1085 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4202E6E02B0930B6002F1085 /* ProfileView.swift */,
+				4202E6EC2B0945B4002F1085 /* FoodPreferences.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4202E6E92B093D7F002F1085 /* lotties */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lotties;
+			sourceTree = "<group>";
+		};
+		4202E6F02B094D88002F1085 /* stuff */ = {
+			isa = PBXGroup;
+			children = (
+				4202E6F52B094D9F002F1085 /* videos */,
+				4202E6F42B094D9B002F1085 /* video1.MP4 */,
+				4202E6F32B094D9B002F1085 /* video2.MP4 */,
+				4202E6F12B094D9B002F1085 /* video3.MP4 */,
+				4202E6F22B094D9B002F1085 /* video4.MP4 */,
+				4202E6E92B093D7F002F1085 /* lotties */,
+			);
+			path = stuff;
+			sourceTree = "<group>";
+		};
+		4202E6F52B094D9F002F1085 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = videos;
+			sourceTree = "<group>";
+		};
 		420843282B08C0150011F58A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +169,7 @@
 		420843332B08C0150011F58A /* FoodieBagFrontend */ = {
 			isa = PBXGroup;
 			children = (
+				4202E6F02B094D88002F1085 /* stuff */,
 				420843602B08C04F0011F58A /* viewmodel */,
 				4208435F2B08C04B0011F58A /* model */,
 				4208435E2B08C0470011F58A /* view */,
@@ -137,8 +209,10 @@
 		4208435E2B08C0470011F58A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4202E6DF2B0930AD002F1085 /* Profile */,
+				4202E6D62B0907FE002F1085 /* HomeView */,
 				420843612B08C1350011F58A /* VideosView.swift */,
-				420843632B08C13C0011F58A /* ProfileView.swift */,
+				4202E6E22B093B9F002F1085 /* LottieView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -146,6 +220,9 @@
 		4208435F2B08C04B0011F58A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				4202E6E72B093CC0002F1085 /* Preferences.swift */,
+				4202E6D72B091247002F1085 /* Recipe.swift */,
+				4202E6EE2B094796002F1085 /* Allergens.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -173,6 +250,9 @@
 			dependencies = (
 			);
 			name = FoodieBagFrontend;
+			packageProductDependencies = (
+				4202E6E52B093CAB002F1085 /* Lottie */,
+			);
 			productName = FoodieBagFrontend;
 			productReference = 420843312B08C0150011F58A /* FoodieBagFrontend.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +325,9 @@
 				Base,
 			);
 			mainGroup = 420843282B08C0150011F58A;
+			packageReferences = (
+				4202E6E42B093CAB002F1085 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 420843322B08C0150011F58A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,9 +370,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420843642B08C13C0011F58A /* ProfileView.swift in Sources */,
 				420843372B08C0150011F58A /* MainView.swift in Sources */,
+				4202E6E12B0930B6002F1085 /* ProfileView.swift in Sources */,
+				4202E6DC2B09151F002F1085 /* ContentView.swift in Sources */,
 				420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */,
+				4202E6EF2B094796002F1085 /* Allergens.swift in Sources */,
+				4202E6E82B093CC0002F1085 /* Preferences.swift in Sources */,
+				4202E6DA2B091498002F1085 /* RecipeView.swift in Sources */,
+				4202E6DE2B091538002F1085 /* BlurView.swift in Sources */,
+				4202E6D82B091247002F1085 /* Recipe.swift in Sources */,
+				4202E6E32B093B9F002F1085 /* LottieView.swift in Sources */,
+				4202E6D52B090784002F1085 /* HomeView.swift in Sources */,
+				4202E6ED2B0945B4002F1085 /* FoodPreferences.swift in Sources */,
 				420843622B08C1350011F58A /* VideosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +712,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4202E6E42B093CAB002F1085 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4202E6E52B093CAB002F1085 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4202E6E42B093CAB002F1085 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 420843292B08C0150011F58A /* Project object */;
 }

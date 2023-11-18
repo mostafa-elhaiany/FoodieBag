@@ -9,6 +9,7 @@
 // Tiktok scroll behaviour
 import SwiftUI
 
+
 struct VideosView: View {
     var body: some View {
         ScrollView(.vertical) {
