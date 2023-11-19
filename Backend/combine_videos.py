@@ -1,8 +1,10 @@
 import cv2
 import os
 
+num = 10
+
 # Define the path to the directory containing the videos
-directory_path = 'video10'
+directory_path = f'data/video{num}'
 
 # List all video files in the directory
 video_files = [f for f in os.listdir(directory_path) if f.lower().endswith(('.mp4', '.avi', '.mov', '.mkv'))]
@@ -21,8 +23,9 @@ fps = cap.get(cv2.CAP_PROP_FPS)
 cap.release()
 
 # Define the codec and create a VideoWriter object
-fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # or use 'XVID' for .avi format
-out = cv2.VideoWriter('video10.mp4', fourcc, fps, (frame_width, frame_height))
+# Change FourCC code to 'X264' for using H.264 codec
+fourcc = cv2.VideoWriter_fourcc(*'X264')
+out = cv2.VideoWriter(f'video{num}.mp4', fourcc, fps, (frame_width, frame_height))
 
 # Function to read and write frames from a video
 def process_video(video_path):

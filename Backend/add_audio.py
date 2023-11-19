@@ -1,8 +1,10 @@
 from moviepy.editor import VideoFileClip, AudioFileClip
 
+num = 10
+
 # Specify the paths to the video and audio files
-video_path = 'data/video10.mp4'
-audio_path = 'data/b10.mp3'
+video_path = f'data/video{num}.mp4'
+audio_path = f'data/b{num}.mp3'
 
 # Load the video and the audio
 video_clip = VideoFileClip(video_path)
@@ -22,4 +24,4 @@ if audio_clip.duration > video_clip.duration:
 final_clip = video_clip.set_audio(audio_clip)
 
 # Write the result to a file (change the filename as needed)
-final_clip.write_videofile('data/video10_b.mp4', codec='libx264', audio_codec='aac')
+final_clip.write_videofile(f'video{num}.mp4', codec='libx264', audio_codec='aac')
