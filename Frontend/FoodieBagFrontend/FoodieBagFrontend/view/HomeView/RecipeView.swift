@@ -10,14 +10,18 @@ import SwiftUI
 struct RecipeView: View {
     var body: some View {
         ScrollView(.vertical){
-            Text("**Ingredients**")
-                .font(.system(size: 24))
-            Spacer()
-            VStack{
-                ForEach(ingredientsList, id: \.id){ingredient in
-                    IngredientsRow(ingredient: ingredient);
+            VStack(alignment: .leading){
+                Text("**Ingredients**")
+                    .font(.system(size: 36, weight: .semibold))
+                    .padding()
+                Spacer()
+                VStack(spacing: 0){
+                    ForEach(ingredientsList, id: \.id){ingredient in
+                        IngredientsRow(ingredient: ingredient);
+                    }
                 }
             }
+            
         }
     }
 }
@@ -48,26 +52,32 @@ let ingredientsList = [
 ]
 
 
-struct IngredientsRow: View{
+struct IngredientsRow: View {
     var ingredient: Ingredient
     var sustainabilityScore: Int = Int.random(in: 1...100)
-    var body: some View{
-        VStack{
-            HStack{
-                Text(ingredient.emoji)
-                Text(ingredient.ingredient)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: 250)
-                Spacer()
-                Text("\(sustainabilityScore) SP")
-                    .font(.callout)
-                    .padding()
-                    .background(.green.opacity(0.3))
-                    .clipShape(Capsule())
-            }
+    
+    var body: some View {
+        HStack {
+            Text(ingredient.emoji)
+                .font(.largeTitle)
+            
+            Text(ingredient.ingredient)
+                .font(.body)
+                .multilineTextAlignment(.leading)
+                .lineLimit(3)  // Ensures the text doesn't wrap to the next line
+            
+            Spacer()
+            
+            Text("\(sustainabilityScore) SP")
+                .font(.callout)
+                .padding()
+                .background(Color.green.opacity(0.2))
+                .clipShape(Capsule())
         }
+        .padding()
     }
 }
+
 
 #Preview {
     RecipeView()
