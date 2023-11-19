@@ -28,6 +28,8 @@ struct MainView: View {
                 }
         }
         .tint(.green)
+        .accentColor(.white) // Set the accent color to white
+        .background(Color.white) // Set the background color to white
 
     }
 }

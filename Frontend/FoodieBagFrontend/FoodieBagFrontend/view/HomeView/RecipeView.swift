@@ -20,6 +20,9 @@ struct RecipeView: View {
                         IngredientsRow(ingredient: ingredient);
                     }
                 }
+                Text("**Instructions**")
+                    .font(.system(size: 36, weight: .semibold))
+                    .padding()
             }
             
         }
@@ -31,6 +34,19 @@ struct Ingredient: Identifiable {
     let emoji: String
     let ingredient: String
 }
+
+let instructionList = [
+    Ingredient(emoji: "1. Prepare Ingredients", ingredient: "Chop the onion, mince the garlic, and grate the ginger. Chop the tomatoes and set aside.If you're using chicken, tofu, or any other protein, cut it into bite-sized pieces."),
+    Ingredient(emoji: "2. Sauté Aromatics", ingredient: "Heat the vegetable oil in a large pan over medium heat. Add the chopped onions and sauté until they become translucent."),
+    Ingredient(emoji: "3. Add Garlic and Ginger:", ingredient: "Add the minced garlic and grated ginger to the pan. Sauté for another 1-2 minutes until the garlic is fragrant."),
+    Ingredient(emoji: "4. Add Tomatoes", ingredient: "Add the chopped tomatoes to the pan and cook until they are soft and the oil starts to separate."),
+    Ingredient(emoji: "5. Add Spices", ingredient: "Add the curry powder, ground cumin, ground coriander, turmeric powder, and red chili powder to the pan. Stir well to combine with the tomato mixture."),
+    Ingredient(emoji: "6. Cook Protein and Vegetables", ingredient: "Add the protein (chicken, tofu, or chickpeas) to the pan and cook until it's browned. Add the mixed vegetables and cook for a few minutes until they start to soften."),
+    Ingredient(emoji: "7. Simmer in Coconut Milk", ingredient: "Pour in the coconut milk and stir the mixture well. Bring it to a simmer. Reduce the heat and let it simmer for about 15-20 minutes, allowing the flavors to meld."),
+    Ingredient(emoji: "8. Season and Garnish:", ingredient: "Season with salt and pepper to taste. Garnish with fresh cilantro."),
+    Ingredient(emoji: "9. Serve", ingredient: "Serve the curry masala over cooked rice or with your favorite bread (naan or roti)."),
+]
+
 
 let ingredientsList = [
     Ingredient(emoji: "🍅", ingredient: "3 Tomatoes"),
@@ -75,6 +91,21 @@ struct IngredientsRow: View {
                 .clipShape(Capsule())
         }
         .padding()
+    }
+}
+
+
+struct InstructionRow: View {
+    var instruction: Ingredient
+    var body: some View {
+        VStack{
+            Text(instruction.emoji)
+                .font(.largeTitle)
+            Text(instruction.ingredient)
+                .font(.body)
+                .multilineTextAlignment(.leading)
+                .lineLimit(50)  // Ensures the text doesn't wrap to the next line
+        }
     }
 }
 
