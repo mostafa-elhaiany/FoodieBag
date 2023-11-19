@@ -10,7 +10,6 @@ def draw_about(st):
 
     st.write("First let's visualize how the app looks like")
 
-    Create a graphlib graph object
     graph = graphviz.Digraph()
     graph.edge('User', 'GPT_1')
     graph.edge('System', 'GPT_1')
