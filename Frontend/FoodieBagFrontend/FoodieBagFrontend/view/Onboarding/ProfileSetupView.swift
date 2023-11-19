@@ -55,9 +55,9 @@ public struct P266_ViscosityCanvas: View {
         .edgesIgnoringSafeArea(.all)
         .onAppear {
             // Animate the card view and title opacity changes over 4 seconds
-            withAnimation(Animation.easeIn(duration: 5)) {
+            withAnimation(Animation.easeIn(duration: 10)) {
                 showCard = true
-                titleOpacity = 0.0
+                titleOpacity = 1.0
             }
         }
     }
