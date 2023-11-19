@@ -1,4 +1,4 @@
-import graphviz
+# import graphviz
 
 def draw_about(st):
     st.title("About Page")
@@ -11,19 +11,19 @@ def draw_about(st):
     st.write("First let's visualize how the app looks like")
 
     # Create a graphlib graph object
-    graph = graphviz.Digraph()
-    graph.edge('User', 'GPT_1')
-    graph.edge('System', 'GPT_1')
-    graph.edge('GPT_1', 'GPT_1')
-    graph.edge('GPT_1', 'GPT_2')
-    graph.edge('GPT_2', 'GPT_2')
-    graph.edge('System', 'GPT_2')
-    graph.edge('GPT_2', 'Text2Video')
-    graph.edge('Text2Video', 'UI')
-    graph.edge('UI', 'User')
+    # graph = graphviz.Digraph()
+    # graph.edge('User', 'GPT_1')
+    # graph.edge('System', 'GPT_1')
+    # graph.edge('GPT_1', 'GPT_1')
+    # graph.edge('GPT_1', 'GPT_2')
+    # graph.edge('GPT_2', 'GPT_2')
+    # graph.edge('System', 'GPT_2')
+    # graph.edge('GPT_2', 'Text2Video')
+    # graph.edge('Text2Video', 'UI')
+    # graph.edge('UI', 'User')
 
     col1, col2,_ = st.columns(3)
-    col1.graphviz_chart(graph)
+    # col1.graphviz_chart(graph)
     col2.write("This is a highlevel chart of how our application is set up")
     col2.write("""
     First, the user inputs a query for a certain dish, country, or simply nothing.
@@ -39,7 +39,7 @@ def draw_about(st):
     _,title,_ = st.columns(3)
     title.title("Team Members")
     team1, team2, team3, team4 = st.columns(4)
-    team1.image("Streamlit/Assets/Images/bethany.jpg")
+    team1.image("Streamlit/Assets/Images/Ali.jpg")
     team1.write("Ali Mokni")
 
     team2.image("Streamlit/Assets/Images/bethany.jpg")
