@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 class VideosViewModel: ObservableObject {
     @Published var posts = [Post]()
     
@@ -18,7 +20,7 @@ class VideosViewModel: ObservableObject {
     ]
     
     init(){
-        
+        fetchPosts()
     }
     
     func fetchPosts(){
@@ -29,6 +31,4 @@ class VideosViewModel: ObservableObject {
             .init(id: NSUUID().uuidString, videoUrl: videoUrls[3]),
         ]
     }
-    
 }
-

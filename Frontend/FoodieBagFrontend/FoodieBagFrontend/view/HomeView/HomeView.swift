@@ -26,29 +26,8 @@ struct HomeView: View {
                 }
                 .padding(.leading, 60.0)
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 30.0) {
-                        ForEach(recipes) { item in
-                            Button(action: { self.showContent.toggle() }) {
-                                GeometryReader { geometry in
-                                    RecipeView(title: item.name,
-                                               image: item.image,
-                                               color: item.color,
-                                               shadowColor: item.shadowColor)
-                                    .rotation3DEffect(Angle(degrees:
-                                                                Double(geometry.frame(in: .global).minX - 30) / -40), axis: (x: 0, y: 10.0, z: 0))
-                                    .sheet(isPresented: self.$showContent) { ContentView() }
-                                }
-                                .frame(width: 246, height: 360)
-                            }
-                        }
-                    }
-                    .padding(.leading, 30)
-                    .padding(.top, 30)
-                    .padding(.bottom, 70)
-                    Spacer()
-                }
-            }}
+            }
+        }
     }
 }
 

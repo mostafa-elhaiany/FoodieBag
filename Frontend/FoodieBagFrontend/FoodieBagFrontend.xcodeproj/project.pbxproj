@@ -24,6 +24,7 @@
 		4202E7052B098CBE002F1085 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E7042B098CBE002F1085 /* FeedCell.swift */; };
 		4202E7072B0991B8002F1085 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E7062B0991B8002F1085 /* Post.swift */; };
 		4202E7092B0991F6002F1085 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E7082B0991F6002F1085 /* VideosViewModel.swift */; };
+		4202E70C2B099C36002F1085 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E70B2B099C36002F1085 /* CustomVideoPlayer.swift */; };
 		420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */; };
 		420843372B08C0150011F58A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843362B08C0150011F58A /* MainView.swift */; };
 		420843392B08C0160011F58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420843382B08C0160011F58A /* Assets.xcassets */; };
@@ -69,6 +70,8 @@
 		4202E7042B098CBE002F1085 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		4202E7062B0991B8002F1085 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4202E7082B0991F6002F1085 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideosViewModel.swift; path = FoodieBagFrontend/model/VideosViewModel.swift; sourceTree = SOURCE_ROOT; };
+		4202E70B2B099C36002F1085 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		4202E70D2B09A5DD002F1085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		420843312B08C0150011F58A /* FoodieBagFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieBagFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendApp.swift; sourceTree = "<group>"; };
 		420843362B08C0150011F58A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -163,6 +166,14 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		4202E70A2B099C25002F1085 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4202E70B2B099C36002F1085 /* CustomVideoPlayer.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		420843282B08C0150011F58A = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +197,7 @@
 		420843332B08C0150011F58A /* FoodieBagFrontend */ = {
 			isa = PBXGroup;
 			children = (
+				4202E70D2B09A5DD002F1085 /* Info.plist */,
 				4202E6F02B094D88002F1085 /* stuff */,
 				420843602B08C04F0011F58A /* viewmodel */,
 				4208435F2B08C04B0011F58A /* model */,
@@ -226,6 +238,7 @@
 		4208435E2B08C0470011F58A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4202E70A2B099C25002F1085 /* Components */,
 				4202E7032B098CAF002F1085 /* Feed */,
 				4202E6DF2B0930AD002F1085 /* Profile */,
 				4202E6D62B0907FE002F1085 /* HomeView */,
@@ -398,6 +411,7 @@
 				4202E7072B0991B8002F1085 /* Post.swift in Sources */,
 				420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */,
 				4202E6EF2B094796002F1085 /* Allergens.swift in Sources */,
+				4202E70C2B099C36002F1085 /* CustomVideoPlayer.swift in Sources */,
 				4202E6E82B093CC0002F1085 /* Preferences.swift in Sources */,
 				4202E6DA2B091498002F1085 /* RecipeView.swift in Sources */,
 				4202E6DE2B091538002F1085 /* BlurView.swift in Sources */,
@@ -575,11 +589,13 @@
 				DEVELOPMENT_TEAM = SR29XA88VK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodieBagFrontend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,11 +620,13 @@
 				DEVELOPMENT_TEAM = SR29XA88VK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodieBagFrontend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
