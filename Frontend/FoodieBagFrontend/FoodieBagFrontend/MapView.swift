@@ -49,7 +49,7 @@ struct MapContentBuilder: View {
     }
 }
 
-struct ContentView: View {
+struct MyPreferredMapContentView: View {
     @State private var countryName: String = ""
     @State private var selectedCountry: String?
     @State private var countryList: [String] = []
@@ -116,8 +116,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MyMapContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MyPreferredMapContentView()
     }
 }

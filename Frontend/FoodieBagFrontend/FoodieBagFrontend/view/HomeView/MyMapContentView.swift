@@ -40,7 +40,7 @@ struct ContentView: View {
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
+struct MapContentView_Previews: PreviewProvider {
    static var previews: some View {
       ContentView()
    }

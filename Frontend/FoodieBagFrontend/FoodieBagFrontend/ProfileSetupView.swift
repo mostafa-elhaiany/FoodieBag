@@ -132,7 +132,7 @@ public struct P266_ViscosityCanvas: View {
                     VStack(spacing: 10) {
                         ForEach(0..<rowCount) { rowIndex in
                             if rowIndex == scrollToIndex {
-                                ContentView()
+                                ScrollableContentView()
                             }
                         }
                     }
@@ -253,7 +253,7 @@ public struct P266_ViscosityCanvas: View {
 
 
 
-    struct ContentView: View {
+    struct ScrollableContentView: View {
         let commonAllergens = ["Milk", "Egg", "Peanut", "Tree Nuts", "Fish", "Shellfish", "Soy", "Wheat"]
         let diets = [
             "Vegetarian",
