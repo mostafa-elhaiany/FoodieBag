@@ -4,6 +4,9 @@ def draw_about(st):
     st.title("About Page")
     st.write("This is the about page. Learn more about us here.")
     st.divider()
+    st.video("Streamlit/Assets/Videos/avatars/target_transfer.mp4")
+
+    st.divider()
 
     st.write("First let's visualize how the app looks like")
 

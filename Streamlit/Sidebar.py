@@ -2,7 +2,7 @@
 
 def draw_sidebar(st):
     st.sidebar.title("Navigation")
-    page = st.sidebar.selectbox("Choose a page", ["Home", "Create", "Personalize" ,"About"])
+    page = st.sidebar.selectbox("Choose a page", ["Home", "Create", "Personalize" ,"About", "Ingredients"])
     st.sidebar.title("")
 
     st.sidebar.title("Preferences")
