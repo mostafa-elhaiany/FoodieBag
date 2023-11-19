@@ -25,6 +25,8 @@
 		4202E7072B0991B8002F1085 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E7062B0991B8002F1085 /* Post.swift */; };
 		4202E7092B0991F6002F1085 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E7082B0991F6002F1085 /* VideosViewModel.swift */; };
 		4202E70C2B099C36002F1085 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E70B2B099C36002F1085 /* CustomVideoPlayer.swift */; };
+		4202E7102B09BA32002F1085 /* CameraView in Frameworks */ = {isa = PBXBuildFile; productRef = 4202E70F2B09BA32002F1085 /* CameraView */; };
+		4202E7132B09BD73002F1085 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E7122B09BD73002F1085 /* GamesView.swift */; };
 		420843352B08C0150011F58A /* FoodieBagFrontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */; };
 		420843372B08C0150011F58A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420843362B08C0150011F58A /* MainView.swift */; };
 		420843392B08C0160011F58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420843382B08C0160011F58A /* Assets.xcassets */; };
@@ -72,6 +74,7 @@
 		4202E7082B0991F6002F1085 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideosViewModel.swift; path = FoodieBagFrontend/model/VideosViewModel.swift; sourceTree = SOURCE_ROOT; };
 		4202E70B2B099C36002F1085 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		4202E70D2B09A5DD002F1085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4202E7122B09BD73002F1085 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		420843312B08C0150011F58A /* FoodieBagFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieBagFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420843342B08C0150011F58A /* FoodieBagFrontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieBagFrontendApp.swift; sourceTree = "<group>"; };
 		420843362B08C0150011F58A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4202E7102B09BA32002F1085 /* CameraView in Frameworks */,
 				4202E6E62B093CAB002F1085 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +178,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		4202E7112B09BD6B002F1085 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4202E7122B09BD73002F1085 /* GamesView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		420843282B08C0150011F58A = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +250,7 @@
 		4208435E2B08C0470011F58A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4202E7112B09BD6B002F1085 /* Game */,
 				4202E70A2B099C25002F1085 /* Components */,
 				4202E7032B098CAF002F1085 /* Feed */,
 				4202E6DF2B0930AD002F1085 /* Profile */,
@@ -285,6 +298,7 @@
 			name = FoodieBagFrontend;
 			packageProductDependencies = (
 				4202E6E52B093CAB002F1085 /* Lottie */,
+				4202E70F2B09BA32002F1085 /* CameraView */,
 			);
 			productName = FoodieBagFrontend;
 			productReference = 420843312B08C0150011F58A /* FoodieBagFrontend.app */;
@@ -360,6 +374,7 @@
 			mainGroup = 420843282B08C0150011F58A;
 			packageReferences = (
 				4202E6E42B093CAB002F1085 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				4202E70E2B09BA32002F1085 /* XCRemoteSwiftPackageReference "CameraView" */,
 			);
 			productRefGroup = 420843322B08C0150011F58A /* Products */;
 			projectDirPath = "";
@@ -406,6 +421,7 @@
 			files = (
 				4202E6FB2B0962E1002F1085 /* AllergiesView.swift in Sources */,
 				420843372B08C0150011F58A /* MainView.swift in Sources */,
+				4202E7132B09BD73002F1085 /* GamesView.swift in Sources */,
 				4202E6E12B0930B6002F1085 /* ProfileView.swift in Sources */,
 				4202E6DC2B09151F002F1085 /* ContentView.swift in Sources */,
 				4202E7072B0991B8002F1085 /* Post.swift in Sources */,
@@ -766,6 +782,14 @@
 				minimumVersion = 4.3.3;
 			};
 		};
+		4202E70E2B09BA32002F1085 /* XCRemoteSwiftPackageReference "CameraView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brettfazio/CameraView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -773,6 +797,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4202E6E42B093CAB002F1085 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		4202E70F2B09BA32002F1085 /* CameraView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4202E70E2B09BA32002F1085 /* XCRemoteSwiftPackageReference "CameraView" */;
+			productName = CameraView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

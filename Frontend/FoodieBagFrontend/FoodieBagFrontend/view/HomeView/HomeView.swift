@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import CameraView
+
 
 struct HomeView: View {
     var recipes = recipeData
@@ -25,6 +27,8 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding(.leading, 60.0)
+                
+                CameraView()
                 
             }
         }

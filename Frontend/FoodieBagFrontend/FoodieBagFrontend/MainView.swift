@@ -12,15 +12,15 @@ struct MainView: View {
         TabView {
             VideosView()
                 .tabItem {
-                    Label("Videos", systemImage: "house")
+                    Label("Videos", systemImage: "arrowtriangle.right.square")
                 }
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "person")
+                    Label("Home", systemImage: "house")
                 }
-            AllergiesView()
+            GamesView()
                 .tabItem {
-                    Label("Home", systemImage: "person")
+                    Label("Game", systemImage: "gamecontroller")
                 }
             ProfileView()
                 .tabItem {

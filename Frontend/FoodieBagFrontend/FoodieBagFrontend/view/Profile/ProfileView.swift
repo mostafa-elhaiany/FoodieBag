@@ -18,7 +18,7 @@ struct ProfileView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 70, height: 70)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 2))
+                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
                     .shadow(radius: 3)
                 
                 VStack{
@@ -31,16 +31,16 @@ struct ProfileView: View {
                 Spacer()
                 Image(systemName: "house")
                     .padding()
-            }
-            .padding()
+            }.padding(.horizontal)
             
-            HStack{
-                Text("Food Preferences")
+            
+            Text("Food Preferences")
                     .font(.title)
-                Spacer()
-            }.padding()
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.leading)
+                    .padding()
             FoodPreferences()
-            
+            Spacer()
             
         }
         
