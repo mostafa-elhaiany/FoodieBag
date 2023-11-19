@@ -29,7 +29,7 @@ struct ProfileView: View {
                         
                 }
                 Spacer()
-                Image(systemName: "house")
+                Image(systemName: "gear")
                     .padding()
             }.padding(.horizontal)
             
