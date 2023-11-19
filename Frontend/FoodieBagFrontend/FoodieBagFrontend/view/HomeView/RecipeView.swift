@@ -23,6 +23,11 @@ struct RecipeView: View {
                 Text("**Instructions**")
                     .font(.system(size: 36, weight: .semibold))
                     .padding()
+                VStack(spacing: 0){
+                    ForEach(instructionList, id: \.id){instruction in
+                        InstructionRow(instruction:  instruction);
+                    }
+                }
             }
             
         }
@@ -97,15 +102,18 @@ struct IngredientsRow: View {
 
 struct InstructionRow: View {
     var instruction: Ingredient
+
     var body: some View {
-        VStack{
+        VStack(alignment: .leading) {
             Text(instruction.emoji)
-                .font(.largeTitle)
+                .font(.system(size: 28, weight: .semibold))
+                .padding(.leading)
             Text(instruction.ingredient)
                 .font(.body)
-                .multilineTextAlignment(.leading)
+                .padding(.leading)
                 .lineLimit(50)  // Ensures the text doesn't wrap to the next line
         }
+        .padding()
     }
 }
 
