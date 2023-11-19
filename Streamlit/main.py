@@ -5,6 +5,9 @@ import Sidebar, Home, About, Create, Personalization
 def main():
     page, tags = Sidebar.draw_sidebar(st)
 
+    _, title, _ = st.columns(3)
+    title.title("FoodieBag")
+
     if page == "Home":
         Home.draw_home(st, tags)
     elif page == "About":

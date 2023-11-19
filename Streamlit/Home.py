@@ -3,7 +3,7 @@ import json
 def __filter(list, user_preferences):
     if(len(user_preferences)==0):
         return list
-    filtered_objects = [obj for obj in list if all(tag in user_preferences for tag in obj.get('tags', []))]
+    filtered_objects = [obj for obj in list if any(tag in user_preferences for tag in obj.get('tags', []))]
     return filtered_objects
 
 

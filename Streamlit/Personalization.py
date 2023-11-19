@@ -37,31 +37,57 @@ def draw_personalize(st):
         # st.write("Base64 Encoded Image:")
         # st.text(encoded_image)
 
+        custome = st.checkbox('Customize')
+        if(custome):
+            customization = st.text_input("What would you like to change", "Can you make this but vegan?")
+            button = st.button("Personalize")
         st.divider()
-
         st.title("AI outputs")
-        st.code("""
-        {
-            dish: "Chinese BBQ sauce"
-            ingredients: [
-                "1/2 cup Sherry",
-                "4 Cloves garlic",
-                "6 tablespoons Soy sauce",
-                "2 teaspoons Plum sauce",
-                "2 tablespoons Black bean paste",
-                "6 tablespoons Hoisin sauce",
-                "2 teaspoons Salt",
-                "1 1/2 teaspoons Chinese 5-spice",
-                "1/2 cup Sugar"
-            ],
-            servings: "13 Servings",
-            instructions: "Mix together well. Heat in a double boiler - add cornstarch for thickening."
-        }
-        """)
+        if(custome and button):
+            with st.spinner("Adding your prefrences in"):
+                for _ in range(10):
+                    time.sleep(0.2)
+            st.code("""
+            {
+                dish: "Chinese BBQ sauce"
+                ingredients: [
+                    "1/2 cup Sherry",
+                    "4 Cloves garlic",
+                    "6 tablespoons Soy sauce",
+                    "2 teaspoons Plum sauce",
+                    "2 tablespoons Black bean paste",
+                    "6 tablespoons Hoisin sauce",
+                    "2 teaspoons Salt",
+                    "1 1/2 teaspoons Chinese 5-spice",
+                    "1/2 cup Sugar"
+                ],
+                servings: "13 Servings",
+                instructions: "Mix together well. Heat in a double boiler - add cornstarch for thickening."
+            }
+            """)
+        else:
+            st.code("""
+            {
+                dish: "Chinese BBQ sauce"
+                ingredients: [
+                    "1/2 cup Sherry",
+                    "4 Cloves garlic",
+                    "6 tablespoons Soy sauce",
+                    "2 teaspoons Plum sauce",
+                    "2 tablespoons Black bean paste",
+                    "6 tablespoons Hoisin sauce",
+                    "2 teaspoons Salt",
+                    "1 1/2 teaspoons Chinese 5-spice",
+                    "1/2 cup Sugar"
+                ],
+                servings: "13 Servings",
+                instructions: "Mix together well. Heat in a double boiler - add cornstarch for thickening."
+            }
+            """)
 
         generate = st.button("Generate Video")
         if(generate):
-            with st.spinner():
+            with st.spinner("Generating an amazing video for you"):
                 for _ in range(10):
                     time.sleep(0.2)
             st.video("Streamlit/Assets/Videos/video1.mp4")
