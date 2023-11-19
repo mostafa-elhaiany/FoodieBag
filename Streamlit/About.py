@@ -39,7 +39,7 @@ def draw_about(st):
     _,title,_ = st.columns(3)
     title.title("Team Members")
     team1, team2, team3, team4 = st.columns(4)
-    team1.image("Streamlit/Assets/Images/bethany.jpg")
+    team1.image("Streamlit/Assets/Images/Ali.jpg")
     team1.write("Ali Mokni")
 
     team2.image("Streamlit/Assets/Images/bethany.jpg")
