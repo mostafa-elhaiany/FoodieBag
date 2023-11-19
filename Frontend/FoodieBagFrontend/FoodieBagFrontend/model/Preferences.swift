@@ -18,11 +18,13 @@ let preferenceData: [PreferenceData] = [
     PreferenceData(imageName: "🍲", title: "Paleo", description: "Mimics the diet of early humans, focusing on whole foods."),
     PreferenceData(imageName: "🌱", title: "Plant-Based", description: "Diet centered around whole, plant-based foods."),
     PreferenceData(imageName: "🍧", title: "Dessert Lover", description: "Enjoys sweet treats and desserts."),
+    PreferenceData(imageName: "➕", title: "Add your preference!", description: "Add anything you like to eat or do not"),
     // Add more food preferences as needed
 ]
 
 
-struct PreferenceData {
+struct PreferenceData: Identifiable, Hashable {
+    var id: UUID = .init()
     var imageName: String
     var title: String
     var description: String

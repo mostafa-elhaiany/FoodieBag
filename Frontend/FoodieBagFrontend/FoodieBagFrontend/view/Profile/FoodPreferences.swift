@@ -29,7 +29,7 @@ struct FoodPreferences: View {
                                     .overlay(
                                         VStack {
                                             Text(preferenceData[index].imageName)
-                                                                                        .font(.system(size: 50))
+                                                                                        .font(.system(size: 80))
 
 
                                             Text(preferenceData[index].title)
@@ -37,6 +37,7 @@ struct FoodPreferences: View {
 
                                             Text(preferenceData[index].description)
                                                 .font(.caption)
+                                                .multilineTextAlignment(.center)
                                         }
                                         .padding()
                                     )

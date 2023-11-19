@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  FoodieBagFrontend
 //
 //  Created by Heidi Albarazi on 18.11.23.
@@ -12,22 +12,25 @@ struct MainView: View {
         TabView {
             VideosView()
                 .tabItem {
-                    Label("Videos", systemImage: "house")
+                    Label("Videos", systemImage: "arrowtriangle.right.square")
                 }
-            HomeView()
+            RecommendRecipeView()
                 .tabItem {
-                    Label("Home", systemImage: "person")
+                    Label("Home", systemImage: "house")
                 }
-            AllergiesView()
+            GamesView()
                 .tabItem {
-                    Label("Home", systemImage: "person")
+                    Label("Game", systemImage: "gamecontroller")
                 }
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
         }
-        .tint(.black)
+        .tint(.green)
+        .accentColor(.white) // Set the accent color to white
+        .background(Color.white) // Set the background color to white
+
     }
 }
 
