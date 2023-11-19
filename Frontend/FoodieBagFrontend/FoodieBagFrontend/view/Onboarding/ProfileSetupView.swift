@@ -1,4 +1,10 @@
-
+//
+//  P266_ViscosityCanvas.swift
+//
+//
+//  Created by jasu on 2022/10/17.
+//  Copyright (c) 2022 jasu All rights reserved.
+//
 
 import SwiftUI
 
@@ -11,49 +17,47 @@ public struct P266_ViscosityCanvas: View {
 
     public init() {}
     public var body: some View {
-        ZStack {
-            // Title in bold
-            Text("Let's get to know you!")
-                .font(.system(size: 128))
-                .fontWeight(.black)
-                .padding(.top, 1)
-                .opacity(titleOpacity)  // Apply opacity based on the titleOpacity state
-
-            viscosityView(color: Color(rgb: 0xD2D90B), scale: $scale1)
-            viscosityView(color: Color(rgb: 0xF2EB79), scale: $scale2)
-                .blendMode(.screen)
-
-            VStack(spacing: 0) {
-                cardView()
-                    .frame(height: UIScreen.main.bounds.height * 0.7) // Adjust the card height as needed
-
-                HStack {
-                    Spacer()
-
-                    Button(action: {
-                        // Add your save action here
-                        print("Save button tapped")
-                    }) {
-                        Text("Save")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background( Color(red: 0.827, green: 0.847, blue: 0.043)
-)
-                            .cornerRadius(15)
-                            .padding()
+        NavigationView {
+            ZStack {
+                // Title in bold
+                Text("Let's get to know you!")
+                    .font(.system(size: 128))
+                    .fontWeight(.black)
+                    .padding(.top, 1)
+                    .opacity(titleOpacity)  // Apply opacity based on the titleOpacity state
+                
+                viscosityView(color: Color(rgb: 0xD2D90B), scale: $scale1)
+                viscosityView(color: Color(rgb: 0xF2EB79), scale: $scale2)
+                    .blendMode(.screen)
+                
+                VStack(spacing: 0) {
+                    cardView()
+                        .frame(height: UIScreen.main.bounds.height * 0.7) // Adjust the card height as needed
+                    
+                    HStack {
+                        Spacer()
+                        
+                        NavigationLink(destination: MyPreferredMapContentView()) { // Replace AnotherView with your target view
+                            Text("Save")
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(Color(red: 0.827, green: 0.847, blue: 0.043))
+                                .cornerRadius(15)
+                                .padding()
+                        }
+                        .opacity(showCard ? 1.0 : 0.0)
+                        .animation(.easeIn(duration: 0.5))
+                        .padding(.trailing, 20) // Adjust the trailing space
                     }
-                    .opacity(showCard ? 1.0 : 0.0)
-                    .animation(.easeIn(duration: 0.5))
-                    .padding(.trailing, 20) // Adjust the trailing space
                 }
             }
-        }
+        } .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.all)
         .onAppear {
             // Animate the card view and title opacity changes over 4 seconds
-            withAnimation(Animation.easeIn(duration: 5)) {
+            withAnimation(Animation.easeIn(duration: 10)) {
                 showCard = true
-                titleOpacity = 0.0
+                titleOpacity = 1.0
             }
         }
     }
@@ -141,7 +145,7 @@ public struct P266_ViscosityCanvas: View {
             .padding()
             .opacity(showCard ? 1.0 : 0.0)
             .onAppear {
-                withAnimation(Animation.easeIn(duration: 4)) {
+                withAnimation(Animation.linear(duration: 2)) {
                     showCard = true
                 }
             }

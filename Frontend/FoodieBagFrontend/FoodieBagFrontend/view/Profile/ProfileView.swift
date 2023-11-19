@@ -11,6 +11,7 @@ struct ProfileView: View {
     @State private var searchText = ""
 
     var body: some View {
+        
         VStack{
             HStack{
                 Image("profilepic1")
