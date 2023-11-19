@@ -18,11 +18,16 @@ struct MainView: View {
                 .tabItem {
                     Label("Home", systemImage: "person")
                 }
+            AllergiesView()
+                .tabItem {
+                    Label("Home", systemImage: "person")
+                }
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
         }
+        .tint(.black)
     }
 }
 
