@@ -34,7 +34,7 @@ struct ContentView: View {
             .rotationEffect(Angle(degrees: show ? 10 : 0))
             .blendMode(.hardLight)
             .offset(x: viewState.width, y: viewState.height)
-
+        SecondARViewController()
       }
    }
 }
