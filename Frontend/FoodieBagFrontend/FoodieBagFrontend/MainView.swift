@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  FoodieBagFrontend
 //
 //  Created by Heidi Albarazi on 18.11.23.
@@ -14,7 +14,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Videos", systemImage: "arrowtriangle.right.square")
                 }
-            HomeView()
+            RecommendRecipeView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
@@ -27,7 +27,8 @@ struct MainView: View {
                     Label("Profile", systemImage: "person")
                 }
         }
-        .tint(.black)
+        .tint(.green)
+
     }
 }
 

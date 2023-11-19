@@ -8,40 +8,24 @@
 import Foundation
 import SwiftUI
 
-struct RecipeCard: Identifiable {
+struct Recipe: Identifiable {
     var id = UUID()
     var name: String
-    var description: String
+    var category: String
     var image: String
     var color: Color
-    var shadowColor: Color
+    var prize: Int
 }
 
 
-let recipeData = [
-   RecipeCard(name: "Enchilladas",
-              description: "testtest",
-          image: "Illustration1",
-          color: Color("blue"),
-          shadowColor: Color("blue")),
-   RecipeCard(name: "Spagetti Bolognese",
-              description: "testtest",
-          image: "Illustration2",
-          color: Color("red"),
-          shadowColor: Color("red")),
-   RecipeCard(name: "French Fries",
-              description: "testtest",
-          image: "Illustration3",
-          color: Color("green"),
-          shadowColor: Color(hue: 0.677, saturation: 0.701, brightness: 0.788, opacity: 0.5)),
-   RecipeCard(name: "Salad",
-              description: "testtest",
-          image: "Illustration4",
-          color: Color("green"),
-          shadowColor: Color(hue: 0.677, saturation: 0.701, brightness: 0.788, opacity: 0.5)),
-   RecipeCard(name: "Flutter for Designers",
-              description: "testtest",
-          image: "Illustration5",
-          color: Color("green"),
-          shadowColor: Color(hue: 0.677, saturation: 0.701, brightness: 0.788, opacity: 0.5)),
+let recipeList = [
+    Recipe(name: "Curry Masala", category: "🍅 vegetarian", image: "currymasala", color: .green, prize: 10),
+    Recipe(name: "Greek Salad", category: "🥦 vegan", image: "salad1", color: .teal, prize: 7),
+    Recipe(name: "Healthy Salad", category: "🥑 Keto", image: "salad2", color: .blue, prize: 13),
+    Recipe(name: "Curry Masala", category: "🍅 vegetarian", image: "currymasala", color: .yellow, prize: 5),
+    Recipe(name: "Healthy Salad", category: "🥑 Keto", image: "salad2", color: .blue, prize: 14),
+    Recipe(name: "Greek Salad", category: "🥦 vegan", image: "salad1", color: .brown, prize: 11),
+    Recipe(name: "Healthy Salad", category: "🥑 Keto", image: "salad2", color: .pink, prize: 9),
+    Recipe(name: "Curry Masala", category: "🍅 vegetarian", image: "currymasala", color: .green, prize: 8),
+    Recipe(name: "Greek Salad", category: "🥦 vegan", image: "salad1", color: .red, prize: 6),
 ]

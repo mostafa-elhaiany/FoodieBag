@@ -23,7 +23,8 @@ let preferenceData: [PreferenceData] = [
 ]
 
 
-struct PreferenceData {
+struct PreferenceData: Identifiable, Hashable {
+    var id: UUID = .init()
     var imageName: String
     var title: String
     var description: String
