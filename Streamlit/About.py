@@ -51,3 +51,8 @@ def draw_about(st):
     team4.image("Streamlit/Assets/Images/mostafa.jpg")
     team4.write("Mostafa ElHayani")
     
+    st.divider()
+    _,image_col, _ = st.columns(3)
+    image_col.image("Streamlit/Assets/Images/socialsQR.jpeg")
+    image_col.write("Follow our socials!")
+    
