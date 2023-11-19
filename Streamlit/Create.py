@@ -79,8 +79,13 @@ def draw_create(st):
             """)
             st.title("Nutritional Value")
             nutrition = __get_nutritional_value(recipe)
-            for item in nutrition:
-                st.code(item)
+            if(len(nutrition)>0):
+                for item in nutrition:
+                    st.code(item)
+            else:
+                st.write("Unfortunatly our database doesn't have data on that yet.")
+                st.write("But fret not! We're working on it.")
+                
             st.divider()
             st.title("Ai generated video")
             st.video("Streamlit/Assets/Videos/video9.mp4")

@@ -14,7 +14,7 @@ def display_local_video_grid(st, json_list, tags):
         st.write("Unfortunalty no videos right now")
         return
     # Calculate the number of rows needed in the grid
-    num_cols = 3
+    num_cols = 2
     num_rows = (len(json_list) + num_cols - 1) // num_cols
     # Create a grid layout
     for row in range(num_rows):
