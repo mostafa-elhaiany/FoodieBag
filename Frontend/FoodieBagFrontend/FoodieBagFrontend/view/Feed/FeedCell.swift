@@ -22,18 +22,16 @@ struct FeedCell: View {
         "Sharing my culinary adventures for a balanced lifestyle."
     ]
     
-    // Randomly select a name and description
-    @State private var randomName = "Carlos Sanchez"
-    @State private var randomDescription = "Nice recipes"
-    
-    init(post: Post, player: AVPlayer){
+    // Properties to store random values
+    @State private var randomName: String
+    @State private var randomDescription: String
+
+    // Initialize with random values
+    init(post: Post, player: AVPlayer) {
         self.post = post
         self.player = player
-        // Randomly select a name and description
-        if let selectedName = names.randomElement(), let selectedDescription = foodDescriptions.randomElement() {
-            randomName = selectedName
-            randomDescription = selectedDescription
-        }
+        _randomName = State(initialValue: names.randomElement() ?? "sarah Lynn")
+        _randomDescription = State(initialValue: foodDescriptions.randomElement() ?? "Very good food")
     }
     
     var body: some View {
@@ -44,7 +42,7 @@ struct FeedCell: View {
             VStack{
                 Spacer()
                 HStack(alignment: .bottom){
-                    VStack{
+                    VStack(alignment: .leading){
                         Text(randomName)
                             .fontWeight(.semibold)
                         Text(randomDescription)
@@ -104,7 +102,14 @@ struct FeedCell: View {
                         
                         
                         Button(action: {
-                            isSaved.toggle()
+                            withAnimation {
+                                isSaved.toggle()
+                                if isSaved {
+                                    savesCount += 1
+                                } else {
+                                    savesCount -= 1
+                                }
+                            }
                         }) {
                             VStack {
                                 Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
