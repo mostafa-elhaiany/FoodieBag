@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "cameraview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/brettfazio/CameraView",
+      "state" : {
+        "revision" : "bb528e129ac23f2888dee51a309bbd4b10374673",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios",
+      "state" : {
+        "revision" : "45517c3cfec9469bbdd4f86e32393c28ae9df0bc",
+        "version" : "4.3.3"
+      }
+    }
+  ],
+  "version" : 2
+}
