@@ -255,3 +255,5 @@ iOSInjectionProject/
 Frontend/FoodieBagFrontend/FoodieBagFrontend.xcodeproj/project.pbxproj
 
 Frontend/FoodieBagFrontend/FoodieBagFrontend.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+*.resolved
