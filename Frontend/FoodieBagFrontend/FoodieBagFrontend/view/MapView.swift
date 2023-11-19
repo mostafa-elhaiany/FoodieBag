@@ -48,13 +48,15 @@ struct MapContentBuilder: View {
         )
     }
 }
-
 struct MyPreferredMapContentView: View {
     @State private var countryName: String = ""
     @State private var selectedCountry: String?
     @State private var countryList: [String] = []
 
+    @State private var isHomeViewPresented = false
+
     var body: some View {
+        NavigationView{
         ZStack {
             ViscosityCanvasMap()
             VStack {
@@ -67,8 +69,7 @@ struct MyPreferredMapContentView: View {
                     })
                     .padding()
                     .textFieldStyle(.plain)
-                    .frame(width: UIScreen.main.bounds.width * 0.5 ,height: 70) // Set the fixed
-                    
+                    .frame(width: UIScreen.main.bounds.width * 0.5, height: 70) // Set the fixed height
                     
                     Button(action: {
                         confirmSelection()
@@ -86,12 +87,11 @@ struct MyPreferredMapContentView: View {
                 List(countryList, id: \.self) { country in
                     GeometryReader { geometry in
                         Text(country)
-                            .foregroundColor(.white) // Set the text color
-                            .frame(width: UIScreen.main.bounds.width , alignment: .leading) // Use the map's width
-                            .padding(10) // Adjust the padding for each row
-                            .background(Color(red: 0.82, green: 0.85, blue: 0.41)
-) // Set the background color for each row
-                            .cornerRadius(10) // Optionally, add corner radius to the rows
+                            .foregroundColor(.white)
+                            .frame(width: UIScreen.main.bounds.width, alignment: .leading)
+                            .padding(10)
+                            .background(Color(red: 0.82, green: 0.85, blue: 0.41))
+                            .cornerRadius(10)
                     }
                     .listRowInsets(EdgeInsets())
                 }
@@ -100,10 +100,23 @@ struct MyPreferredMapContentView: View {
                 .padding()
                 
                 Spacer()
+                NavigationLink(destination: MainView()) { // Replace AnotherView with your target view
+                    Text("Save")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color(red: 0.827, green: 0.847, blue: 0.043))
+                        .cornerRadius(15)
+                        .padding()
+                }
+                .padding()
+                
             }
-            .padding()
+                }
+                .padding()
+        }.navigationBarBackButtonHidden(true)
+            
         }
-    }
+    
 
     private func confirmSelection() {
         // Here you can perform any additional validation or confirmation logic
@@ -115,6 +128,9 @@ struct MyPreferredMapContentView: View {
         }
     }
 }
+
+
+
 
 struct MyMapContentView_Previews: PreviewProvider {
     static var previews: some View {
